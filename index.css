@@ -1,0 +1,178 @@
+/* index.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba(45, 45, 44, 0.022),
+    rgba(219, 175, 73, 0.781),
+    rgb(237, 137, 50)
+  );
+  color: #333;
+}
+
+#outer-container {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 166, 0, 0.427),
+    rgba(255, 0, 0, 0.436)
+  );
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+#inner-container {
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #b5e123;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#inner-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#locationInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+  height: 10px;
+  width: 10px;
+}
+
+.findButton {
+  text-wrap: wrap;
+  background-color: #54cd1c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.findButton img {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  margin-left: 5px;
+}
+
+.findButton:hover {
+  background-color: #1a5276;
+}
+.btnCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2px;
+}
+
+#inner-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.infoLocation {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(136, 216, 179),
+    rgb(141, 222, 123)
+  );
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoLocation p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.infoContent {
+  font-weight: bold;
+  color: #360683;
+}
+
+/* Small Screens */
+@media screen and (max-width: 480px) {
+  #inner-container-2 {
+    flex-direction: column;
+  }
+  .findButton {
+    width: 100%;
+  }
+  .infoLocation {
+    flex: 1 1 100%;
+  }
+  #inner-container-3 {
+    flex-direction: column;
+  }
+}
+
+/* Medium Screens */
+@media screen and (max-width: 768px) {
+  #outer-container {
+    width: 90%;
+    max-width: none;
+    margin: 20px;
+  }
+  #inner-container-3 {
+    height: auto;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 769px) {
+  #outer-container {
+    max-width: 600px;
+    border-radius: 30px;
+  }
+  #inner-container-3 {
+    height: 600px;
+    overflow: hidden;
+  }
+  #inner-container-3:hover {
+    overflow: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #outer-container {
+    max-width: 800px;
+  }
+  .infoLocation {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+}

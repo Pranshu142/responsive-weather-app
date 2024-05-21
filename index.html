@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="outer-container">
+      <div id="inner-container">
+        <header id="inner-container-1">
+          <h1>Weather App</h1>
+        </header>
+        <section id="inner-container-2">
+          <input
+            type="text"
+            placeholder="Enter city name"
+            id="locationInput"
+            value="Kanpur"
+          />
+          <button class="findButton" id="Search">
+            <div class="btnCon">
+              <img src="./look-up-svgrepo-com.svg" alt="" srcset="" />
+              <span>Search</span>
+            </div>
+          </button>
+        </section>
+        <section id="inner-container-3">
+          <div class="infoLocation">
+            <p>Location:</p>
+            <p class="infoContent" id="Location">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Cloud_pct:</p>
+            <p class="infoContent" id="Cloud_pct">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Current Temperature:</p>
+            <p class="infoContent" id="Temperature">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Feels Like:</p>
+            <p class="infoContent" id="Feels_Like">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Hummidty:</p>
+            <p class="infoContent" id="Hummidity">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Min Temperature:</p>
+            <p class="infoContent" id="Min_Temp">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Wind Degrees:</p>
+            <p class="infoContent" id="Wind_Deg">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Sunrise:</p>
+            <p class="infoContent" id="Sunrise">---</p>
+          </div>
+          <div class="infoLocation">
+            <p>Sunset:</p>
+            <p class="infoContent" id="Sunset">---</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
